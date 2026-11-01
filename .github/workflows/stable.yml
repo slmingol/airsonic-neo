@@ -9,7 +9,7 @@ permissions:
   packages: write
 
 env:
-  REGISTRY_IMAGE: ghcr.io/thewriteway/airsonic-advanced
+  REGISTRY_IMAGE: ghcr.io/slmingol/airsonic-neo
 
 jobs:
   deploy:
@@ -236,7 +236,7 @@ jobs:
           prerelease: false
           generate_release_notes: true
           body: |
-            List of issues addressed: https://github.com/thewriteway/airsonic-advanced/issues?q=milestone%3A${{ env.RELEASE_TAG }}
+            List of issues addressed: https://github.com/slmingol/airsonic-neo/issues?q=milestone%3A${{ env.RELEASE_TAG }}
           files: |
             /tmp/artifacts/airsonic.war
             /tmp/artifacts/artifacts-checksums.sha

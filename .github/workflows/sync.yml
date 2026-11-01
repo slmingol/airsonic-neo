@@ -22,21 +22,12 @@ jobs:
 
 
 
-      - name: Get parent (upstream) repo full name
+      - name: Set upstream repo
         id: get-upstream
         run: |
-          repo="${{ github.repository }}"
-          parent=$(gh api repos/$repo --jq '.parent.full_name // empty' 2>/dev/null)
-          if [ -z "$parent" ]; then
-            echo "❌ No upstream repository found. This repository may not be a fork."
-            echo "💡 This workflow only works with forked repositories."
-            exit 1
-          fi
+          parent="thewriteway/airsonic-advanced"
           echo "parent=$parent" >> "$GITHUB_OUTPUT"
-          echo "🔍 Found upstream repository: $parent"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          echo "🔍 Upstream repository: $parent"
 
       - name: Add upstream and fetch
         run: |

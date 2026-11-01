@@ -7,7 +7,7 @@ on:
       - labeled
 
 env: 
-  REGISTRY_IMAGE: ghcr.io/thewriteway/airsonic-advanced
+  REGISTRY_IMAGE: ghcr.io/slmingol/airsonic-neo
 
 jobs:
   version:

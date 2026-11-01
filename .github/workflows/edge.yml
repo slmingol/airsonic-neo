@@ -16,7 +16,7 @@ permissions:
 env:
   DEFAULT_MUSIC_FOLDER: /tmp/music
   EXCLUDED_TEST_GROUPS:
-  REGISTRY_IMAGE: ghcr.io/thewriteway/airsonic-advanced
+  REGISTRY_IMAGE: ghcr.io/slmingol/airsonic-neo
 
 jobs:
   version:
