@@ -800,19 +800,19 @@ public class SettingsService {
 
     public long getTranscodeEstimateTimePadding() {
         return getLong(KEY_TRANSCODE_ESTIMATE_TIME_PADDING, DEFAULT_TRANSCODE_ESTIMATE_TIME_PADDING);
-    };
+    }
 
     public void setTranscodeEstimateTimePadding(Long timeInMillis) {
         setLong(KEY_TRANSCODE_ESTIMATE_TIME_PADDING, timeInMillis);
-    };
+    }
 
     public long getTranscodeEstimateBytePadding() {
         return getLong(KEY_TRANSCODE_ESTIMATE_BYTE_PADDING, DEFAULT_TRANSCODE_ESTIMATE_BYTE_PADDING);
-    };
+    }
 
     public void setTranscodeEstimateBytePadding(Long bytes) {
         setLong(KEY_TRANSCODE_ESTIMATE_BYTE_PADDING, bytes);
-    };
+    }
 
     public int getDbBackupInterval() {
         return getInt(KEY_DB_BACKUP_INTERVAL, DEFAULT_DB_BACKUP_INTERVAL);
