@@ -82,7 +82,7 @@ public class TranscodingService {
     @Autowired
     private SettingsService settingsService;
     @Autowired
-    private PlayerRepository playerRepository;;
+    private PlayerRepository playerRepository;
     @Autowired
     private TranscodingRepository transcodingRepository;
     @Autowired

@@ -184,7 +184,7 @@ public class PodcastPersistenceService {
         channel.setErrorMessage(null);
         channel.setMediaFile(mediaFile);
         return podcastChannelRepository.save(channel);
-    };
+    }
 
     /**
      * set error status to channel and save
